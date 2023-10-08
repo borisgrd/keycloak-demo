@@ -13,7 +13,7 @@ public class DemoController {
         return "Hi";
     }
 
-    @GetMapping("/hello-2")
+    @GetMapping("/hello-admin")
     public String hello2() {
         return "Hi ADMIN";
     }

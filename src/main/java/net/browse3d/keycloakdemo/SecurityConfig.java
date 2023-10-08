@@ -7,10 +7,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.security.web.SecurityFilterChain;
-
-import com.nimbusds.jose.crypto.factories.DefaultJWEDecrypterFactory;
 
 import lombok.RequiredArgsConstructor;
 
@@ -19,26 +16,6 @@ import lombok.RequiredArgsConstructor;
 @EnableMethodSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
-
-        // public SecurityFilterChain securityFilterChain(HttpSecurity http) throws
-        // Exception {
-        // http.csrf()
-        // .disable()
-        // .authorizeHttpRequests()
-        // .anyRequest()
-        // .fullyAuthenticated();
-
-        // http.oauth2ResourceServer()
-        // .jwt();
-
-        // http.sessionManagement()
-        // .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-
-        // return http.build();
-
-        // }
-
-        // private final JwtDecoder jwtDecoder;
         private final JwtAuthConverter jwtAuthConverter;
 
         @Bean
@@ -53,7 +30,6 @@ public class SecurityConfig {
                                                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
                 return http.build();
-
         }
 
 }
