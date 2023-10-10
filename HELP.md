@@ -1,6 +1,28 @@
 # Reference (Credits)
 Following through the original video tutorial https://youtu.be/vmEWywGzWbA?si=oLnk_EA_1jCrcWrC
 
+- Use RBAC (role base auth)  with spring security (spring boot rest api app ) and keycloak as auth provider 
+
+- Note: https://www.baeldung.com/spring-security-method-security - Spring Method Security doc in Baeldung
+
+- Note: http://localhost:9090/realms/boris/.well-known/openid-configuration
+
+# Steps with KeyCloak console
+
+## create realm (boris)
+
+## create client (boris-rest-api) 
+
+## create user (boris)
+
+## create realm roles for realm "boris" (ex. user_role and admin_role) and assign them to user "boris"
+
+## create client roles (client_user and client_admin)
+
+## associate realm roles with client roles (they become composite) -> user "boris" can now be a client user and client admin
+
+# Code change
+
 ## added Lanbda DSL to the SecurityConfig
 
 
