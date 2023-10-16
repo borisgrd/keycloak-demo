@@ -7,6 +7,9 @@ Following through the original video tutorial https://youtu.be/vmEWywGzWbA?si=oL
 
 - Note: http://localhost:9090/realms/boris/.well-known/openid-configuration
 
+- Worth to read and follow through: https://github.com/ch4mpy/spring-addons -> https://github.com/ch4mpy/spring-addons/tree/master/samples/tutorials 
+
+
 # Steps with KeyCloak console
 
 ## create realm (boris)
