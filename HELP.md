@@ -7,29 +7,34 @@ Following through the original video tutorial https://youtu.be/vmEWywGzWbA?si=oL
 
 - Note: http://localhost:9090/realms/boris/.well-known/openid-configuration
 
-- Worth to read and follow through: https://github.com/ch4mpy/spring-addons -> https://github.com/ch4mpy/spring-addons/tree/master/samples/tutorials 
+- Worth to read and follow through: 
+-- https://dzone.com/articles/spring-oauth2-resource-servers
+-- https://github.com/ch4mpy/spring-addons 
+-- https://github.com/ch4mpy/spring-addons/tree/master/samples/tutorials 
+
+
 
 
 # Steps with KeyCloak console
 
-## create realm (boris)
+### create realm (boris)
 
-## create client (boris-rest-api) 
+### create client (boris-rest-api) 
 
-## create user (boris)
+### create user (boris)
 
-## create realm roles for realm "boris" (ex. user_role and admin_role) and assign them to user "boris"
+### create realm roles for realm "boris" (ex. user_role and admin_role) and assign them to user "boris"
 
-## create client roles (client_user and client_admin)
+### create client roles (client_user and client_admin)
 
-## associate realm roles with client roles (they become composite) -> user "boris" can now be a client user and client admin
+### associate realm roles with client roles (they become composite) -> user "boris" can now be a client user and client admin
 
 # Code change
 
-## added Lanbda DSL to the SecurityConfig
+### added Lanbda DSL to the SecurityConfig
 
 
-# Getting Started
+# General Getting Started
 
 ### Reference Documentation
 For further reference, please consider the following sections:
